@@ -1,0 +1,18 @@
+@CHARSET "UTF-8";
+div.divClass{
+	float:left;
+	border: 0px solid black;
+	width:960px;
+	height:200px;
+}
+div.divClass2{
+	float:left;
+	border: 0px solid black;
+	width:96opx;
+	height:auto;
+}
+div.head{
+	border: 0px solid black;
+	width:99%;
+	height:200px;
+}

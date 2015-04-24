@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xstruts>
+	<constant name="version" value="2.0" />
+	<constant name="extension" value="action" />
+	<constant name="encoding" value="utf-8" />
+	<constant name="debug" value="true" />
+	<constant name="default_db" value="mysql" />
+	<constant name="default_result_type" value="forward" />
+	<constant name="session_name_user" value="__user__" />
+
+    <!-- 供Action使用的选项 -->
+    <options>
+        <option name="backup_directory" value="WEB-INF/backup" />
+        <option name="auto_backup" value="1" />
+        <option name="backup_interval" value="DAY 1" />
+        <option name="roll_dir" value="D:\svn\lesson\roll_all\2014-2015D\" />
+    </options>
+
+    <beans>
+        <bean id="UserAction" class="com.hqu.agri.actions.UserAction" scope="request">
+            <property name="userService">
+                <ref bean="UserService" />
+            </property>
+	    </bean>
+	</beans>
+
+    <db name="mysql" class="com.xxdw.platform.db.DbConnection"
+		fieldprefix="f_">
+		<param name="driver">com.mysql.jdbc.Driver</param>
+		<param name="url">jdbc:mysql://127.0.0.1:3306/ers</param>
+		<param name="user">root</param>
+		<param name="password">147258</param>
+	</db>
+
+	<package name="root" namespace="/">
+		<interceptors>
+			<interceptor name="resubmitInterceptor"
+				class="com.xxdw.platform.interceptor.ResubmitInterceptor" />
+		</interceptors>
+
+		<global-results>
+			<!-- 若action中的result与此处定义的同名，action中的优先。 
+				forward方法:路径以"/"开头表示是相对ContextPath的路径 
+				redirect方法:路径以"/"开头表示是相对容器根的路径 -->
+			<result name="homepage" type="redirect_top">/callname/index.jsp</result>
+            <result name="error">/error.jsp</result>
+		</global-results>
+
+		<!-- 本节配置对用户是否登录的验证，mode表示缺省拒绝还是允许访问，
+			与exception(例外的action)参数中配置的action名配合使用 -->
+		<login required="true" mode="deny" sessionname="__user__">
+			<param name="result">homepage</param> <!-- 应为一个action或global-result -->
+			<param name="exception">loginlogout, user_testPerformance</param> <!-- 以“，”分隔，action名前缀匹配 -->
+		</login>
+
+        <action name="loginlogout" class="com.lexiecn.callname.action.LoginLogoutAction">
+            <result>admin_index.jsp
+                <param name="id">${formBean.username}</param>
+                <param name="ex">${formBean.password}</param>
+            </result>
+            <result name="input">/index.jsp</result>
+            <result name="top">admin_top.jsp</result>
+            <result name="left">admin_left.jsp</result>
+            <result name="main">admin_main.jsp</result>
+        </action>
+        
+        <action name="user" class="com.lexiecn.callname.action.UserManageAction">
+            <result name="success">user_message.jsp</result>
+        </action>
+        
+		<action name="attendance" class="com.lexiecn.callname.action.AttendanceAction">
+			<result>admin_attendance.jsp</result>
+		</action>
+		
+		<action name="bluetooth" class="com.lexiecn.callname.action.BluetoothAction">
+            <result name="top">bluetooth_top.jsp</result>
+            <result name="left">bluetooth_left.jsp</result>
+            <result name="main">bluetooth_main.jsp</result>
+        </action>
+	</package>
+</xstruts>

@@ -1,0 +1,251 @@
+@charset "utf-8";
+/************************************************************************
+ * File name   : Admincss.css
+ * Info        : 180
+ * Writer      : flying
+ * Date        : 2011.7.19	
+************************************************************************/
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	}
+
+body, th, td, input, textarea, select {font-size: 12px; color:#295c95; margin:0px; padding:0px; font-family:Arial, Helvetica, sans-serif;} 
+body {margin: 0}
+img{border: 0;}
+td{margin:0; padding:0;}
+ul, li {padding: 0; margin: 0; list-style: none;}
+
+
+/*Weblink*/
+a:link {color: blue;	text-decoration: none;}
+a:visited {text-decoration: none;color: blue;}
+a:hover { text-decoration: none;color: #E7141A;}
+a:active {text-decoration: none;}
+
+/*Bluelink*/
+a.Bluelink:link {color:#0048AE;text-decoration: none; font-size:12px;}
+a.Bluelink:visited {text-decoration: none;color: #0048AE; font-size:12px;}
+a.Bluelink:hover { text-decoration: none;color: #E7141A; font-size:12px;}
+a.Bluelink:active {text-decoration: none;}
+
+/*Whitelink*/
+a.Whitelink:link {color:#fff;text-decoration: none; font-size:12px;}
+a.Whitelink:visited {text-decoration: none;color:#fff; font-size:12px;}
+a.Whitelink:hover { text-decoration: none;color:#E7141A; font-size:12px;}
+a.Whitelink:active {text-decoration: none;}
+
+/*Redlink*/
+a.Redlink:link {color:#ff0000;text-decoration: none; font-size:12px;}
+a.Redlink:visited {text-decoration: none;color:#ff0000; font-size:12px;}
+a.Redlink:hover { text-decoration: none;color:#295c95; font-size:12px;}
+a.Redlink:active {text-decoration: none;}
+
+/*Graylink*/
+.Gray{color:gray; font-size:12px; }
+
+/*Menulink*/
+a.Menulink:link {color: #fff;text-decoration: none; font-size:12px;}
+a.Menulink:visited {text-decoration: none;color: #fff; font-size:12px;}
+a.Menulink:hover { text-decoration: none;color: #005e97; font-size:12px;}
+a.Menulink:active {text-decoration: none;}
+
+
+
+/*Fontcss*/
+.TopTime{ font-size:12px; color:#0048AE;}
+.TitleText{ font-size:14px; color:#0049AC; font-weight:bold;}
+.White{font-size:12px; color:#FFF;}
+.Entext{font-size:10px; text-transform:uppercase; color:#b3b3b3;}
+.Copyright{font-size:12px; line-height:22px; color:#808183;}
+.TextLine-height{line-height:20px; }
+.Size12{font-size:12px;}
+.Size12-2{font-size:12px; color:#808284;}
+.WhiteText{font-size:14px; font-weight:bold; color:#fff;}
+.LeftTitle{font-size:12px; font-weight:bold; color:#FFF; text-indent:2px;}
+.MainTitle{font-size:14px; font-weight:bold;}
+.NewsInfoTitle{font-size:20px; font-weight:bold;}
+.RedStart{font-size:12px; color:#F00;}
+.NewsInfoSmallEnTitle{font-size:11px; color:#ED2629; font-family:Arial, Helvetica, sans-serif;}
+.NewsInfoTime{font-size:11px; color:#FF0000;}
+div.showMessage{text-align:center;color:red;font-size:20px;}
+strong.TextLine-font{line-height:30px;font-size:18px;}
+
+
+
+/*Tab*/
+.sec1  {
+cursor: hand;
+color: #0049AC; font-size:14px;
+}
+
+.sec2  {
+background-image:url(../images/index-22.jpg);
+cursor: hand;
+color: #0049AC;
+font-weight:bold;
+font-size:14px;
+}
+
+
+
+
+/*movie*/
+UL {PADDING: 0px; MARGIN: 0px;}
+LI {PADDING: 0px; MARGIN: 0px;}
+.container {
+	WIDTH: 945px;
+	HEIGHT: 240px
+}
+.container A IMG {
+	WIDTH: 945px;
+	HEIGHT: 240px
+}
+.container IMG {
+	BORDER-BOTTOM-STYLE: none;
+	BORDER-RIGHT-STYLE: none;
+	BORDER-TOP-STYLE: none;
+	BORDER-LEFT-STYLE: none
+}
+.td_f A IMG {
+	PADDING-BOTTOM: 0px;
+	MARGIN: 0px;
+	PADDING-LEFT: 0px;
+	PADDING-RIGHT: 0px;
+	PADDING-TOP: 0px
+}
+.num {
+	POSITION: absolute;
+	WIDTH: 120px;
+	FLOAT: right;
+	TOP: 215px;
+	LEFT: 835px;
+}
+.num LI {
+	TEXT-ALIGN: center;
+	LINE-HEIGHT: 15px;
+	LIST-STYLE-TYPE: none;
+	MARGIN: 1px;
+	WIDTH: 15px;
+	FONT-FAMILY: Arial;
+	BACKGROUND: url(../images/flashbutton.gif) no-repeat -15px 0px;
+	FLOAT: left;
+	HEIGHT: 15px;
+	COLOR: #86a2b8;
+	FONT-SIZE: 12px;
+	CURSOR: pointer
+}
+.num LI.on {
+	LINE-HEIGHT: 15px;
+	WIDTH: 15px;
+	BACKGROUND: url(../images/flashbutton.gif) no-repeat;
+	HEIGHT: 15px;
+	COLOR: #ffffff
+}
+
+
+/*form*/
+.Userbox1{width:160px;color:#295c95; border:#cacaca solid 1px; font-size:12px; font-family:Verdana, Geneva, sans-serif; background-color:#FFF; padding:2px;}
+.Useraddressbox{width:350px;color:#295c95; border:#cacaca solid 1px; font-size:12px; font-family:Verdana, Geneva, sans-serif; background-color:#FFF; padding:2px;}
+.UserPCbox{width:120px; color:#295c95; border:#cacaca solid 1px; font-size:12px; font-family:Verdana, Geneva, sans-serif; background-color:#FFF; padding:2px;}
+.UserCodebox{width:50px; color:#295c95; border:#cacaca solid 1px; font-size:12px; font-family:Verdana, Geneva, sans-serif; background-color:#FFF; padding:2px;}
+.Searchbox{width:120px; color:#295c95; border:#cacaca solid 1px; font-size:12px; font-family:Verdana, Geneva, sans-serif; background-color:#FFF; padding:2px;}
+.button{width:50px; height:20px; border:#cacaca solid 1px; font-size:12px; background-color:#FFF; padding:2px;}
+.button_check{width:70px; height:20px; border:#cacaca solid 1px; font-size:12px; background-color:#FFF; padding:2px;}
+.Userbox2{width:250px;color:#295c95; border:#cacaca solid 1px; font-size:12px; font-family:Verdana, Geneva, sans-serif; background-color:#FFF; padding:2px;}
+.topic_content{width:500px ; height:345px}
+
+
+/*CSS manu style pagination*/
+
+.manu {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; MARGIN: 3px; PADDING-TOP: 3px; TEXT-ALIGN: center
+}
+.manu A {
+	BORDER-RIGHT: #eee 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #eee 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 2px; MARGIN: 2px; BORDER-LEFT: #eee 1px solid; COLOR: #036cb4; PADDING-TOP: 2px; BORDER-BOTTOM: #eee 1px solid; TEXT-DECORATION: none
+}
+.manu A:hover {
+	BORDER-RIGHT: #999 1px solid; BORDER-TOP: #999 1px solid; BORDER-LEFT: #999 1px solid; COLOR: #666; BORDER-BOTTOM: #999 1px solid
+}
+.manu A:active {
+	BORDER-RIGHT: #999 1px solid; BORDER-TOP: #999 1px solid; BORDER-LEFT: #999 1px solid; COLOR: #666; BORDER-BOTTOM: #999 1px solid
+}
+.manu .current {
+	BORDER-RIGHT: #036cb4 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #036cb4 1px solid; PADDING-LEFT: 5px; FONT-WEIGHT: bold; PADDING-BOTTOM: 2px; MARGIN: 2px; BORDER-LEFT: #036cb4 1px solid; COLOR: #fff; PADDING-TOP: 2px; BORDER-BOTTOM: #036cb4 1px solid; BACKGROUND-COLOR: #036cb4
+}
+.manu .disabled {
+	BORDER-RIGHT: #eee 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #eee 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 2px; MARGIN: 2px; BORDER-LEFT: #eee 1px solid; COLOR: #ddd; PADDING-TOP: 2px; BORDER-BOTTOM: #eee 1px solid
+}
+
+
+
+/**/
+#popupMask {
+	position: absolute;
+	z-index: 200;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: .4;
+	filter: alpha(opacity=40);
+	/* this hack is so it works in IE
+	 * I find setting the color in the css gives me more flexibility 
+	 * than the PNG solution.
+	 */
+	background-color:transparent !important;
+	background-color: #333333;
+	/* this hack is for opera support
+	 * you can uncomment the background-image if you don't care about opera.
+	 * this gives you the flexibility to use any bg color that you want, instead of the png
+	 */
+	background-image/**/: url("../images/maskBG.png") !important; // For browsers Moz, Opera, etc.
+	background-image:none;
+	background-repeat: repeat;
+	display:none;
+}
+#popupContainer {
+	position: absolute;
+	z-index: 201;
+	top: 0px;
+	left: 0px;
+	display:none;
+	padding: 0px;
+}
+#popupInner {
+	border: 2px solid #d0d0d0;
+	background-color: #ffffff;
+}
+
+#popupFrame {
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	z-index: 202;
+}
+#popupTitleBar {
+	background-image:url(../images/index-25.jpg);
+	color: #ffffff;
+	font-weight: bold;
+	height:22px;
+	padding: 5px;
+	border-bottom: 0px solid #d0d0d0;
+	border-top: 0px solid #d0d0d0;
+	border-left: 0px solid #d0d0d0;
+	border-right: 0px solid #d0d0d0;
+	position: relative;
+	z-index: 203;
+}
+#popupTitle {
+	float:left;
+	font-size:12px;
+}
+#popupControls {
+	float: right;
+	cursor: pointer;
+	cursor: hand;
+}
+.alert{color:red}

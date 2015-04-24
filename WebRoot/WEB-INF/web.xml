@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  
+	<filter>
+		<filter-name>encoding</filter-name>
+		<filter-class>com.xxdw.platform.filter.EncodingFilter</filter-class>
+		<init-param>
+		   <param-name>charset</param-name>
+		   <param-value>UTF-8</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>encoding</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	  
+	<filter>
+		<filter-name>xxdw_struts</filter-name>
+		<filter-class>com.xxdw.platform.filter.FilterDispatcher</filter-class>
+		<init-param>
+		   <param-name>charset</param-name>
+		   <param-value>UTF-8</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+	    <filter-name>xxdw_struts</filter-name>
+	    <url-pattern>*.action</url-pattern>
+	</filter-mapping>
+	 
+	<jsp-config>  
+		<taglib>
+		    <taglib-uri>jstl/core</taglib-uri>
+		    <taglib-location>/WEB-INF/tld/c.tld</taglib-location>
+		</taglib>
+		<taglib>
+		    <taglib-uri>jstl/fmt</taglib-uri>
+		    <taglib-location>/WEB-INF/tld/fmt.tld</taglib-location>
+		</taglib>
+		<taglib>
+		    <taglib-uri>jstl/fn</taglib-uri>
+		    <taglib-location>/WEB-INF/tld/fn.tld</taglib-location>
+		</taglib>
+		<taglib>
+		    <taglib-uri>jstl/x</taglib-uri>
+		    <taglib-location>/WEB-INF/tld/x.tld</taglib-location>
+		</taglib>
+	</jsp-config>
+	<welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
